@@ -1,0 +1,125 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1018px;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#left {
+  max-width: 40%;
+  background: #174180;
+}
+
+#right {
+  max-width: 60%;
+}
+
+.column {
+  padding: 20px;
+}
+
+.column p,
+.column ul {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.column h2 {
+  margin-bottom: 5px;
+}
+
+#left h2 {
+  color: #56ccf2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#personal-header {
+  width: 256px;
+  margin: 0 auto;
+}
+
+#personal-header #name {
+  margin: 0 auto;
+  width: fit-content;
+  color: #ffffff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#personal-header #job-title {
+  margin: 0 auto;
+  width: fit-content;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+#left p,
+#left ul {
+  color: #ffffff;
+}
+
+#left ul > li {
+  list-style-type: none;
+}
+
+#right h2 {
+  color: #174180;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#right h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #4f4f4f;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#right p,
+#right ul {
+  color: #4f4f4f;
+}
+
+#right ul > li {
+  list-style-type: none;
+}
+
+#photo {
+  border-radius: 50%;
+}
+
+#right .date {
+  text-align: right;
+  color: #4f4f4f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
