@@ -162,3 +162,23 @@ a:visited {
   background-color: #56ccf2;
   color: #174180;
 }
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+}
+
+#skills ul li {
+  display: flex;
+  align-items: center;
+  /*height: 50px; !* Adjust the height as needed *!*/
+  margin-bottom: 2px; /* Adjust the spacing between li elements */
+}
+
+#skills ul li svg {
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px; /* Adjust the size of the icons */
+  margin-right: 8px; /* Adjust the spacing between the icon and text */
+}
