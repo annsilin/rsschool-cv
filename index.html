@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tomorrow-night-blue.min.css">
+
 </head>
 <body>
 
@@ -18,7 +21,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#courses">Courses</a></li>
-      <li><a href="#code">Code</a></li>
+      <li><a href="#code-example">Code</a></li>
     </ul>
   </nav>
 </header>
@@ -200,10 +203,17 @@
             <p class="date">October 2022</p></li>
         </ul>
       </section>
-      <section id="code">
+      <section id="code-example">
         <h2>Code example</h2>
         <p><a href="https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript" target="_blank">ReversedStrings</a>
           task from Codewars</p>
+        <pre>
+          <code class="language-javascript">
+            function solution(str){
+              return str.split(&#34;&#34;).reverse().join(&#34;&#34;);
+            }
+          </code>
+        </pre>
       </section>
     </div>
   </div>
@@ -212,6 +222,7 @@
 <footer class="main-footer">
   <!-- Подвал сайта -->
 </footer>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
