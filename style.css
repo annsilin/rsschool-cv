@@ -2,30 +2,8 @@ p,
 ul,
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Open Sans", sans-serif;
-}
-
-section h2 {
-  position: relative;
-  display: inline-block;
-}
-
-section h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #56ccf2;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-section:hover h2::after {
-  transform: scaleX(1);
 }
 
 body {
@@ -65,7 +43,13 @@ body {
   list-style-type: none;
 }
 
-.column h2 {
+.column section {
+  margin: 30px 0 30px 0;
+}
+
+section .section-title {
+  position: relative;
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 23px;
@@ -74,12 +58,48 @@ body {
   line-height: normal;
 }
 
-.column section {
-  margin: 30px 0 30px 0;
+section .section-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #56ccf2;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-#left h2 {
+section:hover .section-title::after {
+  transform: scaleX(1);
+}
+
+#right .section-title {
+  color: #174180;
+}
+
+#left .section-title {
   color: #56ccf2;
+}
+
+#right h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #4f4f4f;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#left p,
+#left ul {
+  color: #ffffff;
+}
+
+#right p,
+#right ul {
+  color: #4f4f4f;
 }
 
 #personal-header {
@@ -105,30 +125,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-#left p,
-#left ul {
-  color: #ffffff;
-}
-
-#right h2 {
-  color: #174180;
-}
-
-#right h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  color: #4f4f4f;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-#right p,
-#right ul {
-  color: #4f4f4f;
 }
 
 #photo {
@@ -178,7 +174,6 @@ a:visited {
   padding: 0 20px;
   text-decoration: none;
   color: #ffffff;
-  /*background-color: #174180;*/
   background-color: #002451;
   font-weight: 700;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -216,7 +211,6 @@ a:visited {
 
 #footer {
   height: 50px;
-  /*background-color: #56ccf2;*/
   background-color: #002451;
 }
 
