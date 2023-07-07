@@ -1,9 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Anna Silinskaya CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tomorrow-night-blue.min.css">
+
 </head>
 <body>
+
+<header class="main-header">
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#code-example">Code</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div id="wrapper">
+    <div class="column" id="left">
+      <header id="personal-header">
+        <img id="photo" src="images/photo.png" alt="My photo" width="242" height="242">
+        <h1 id="name">Anna Silinskaya</h1>
+        <h2 id="job-title">Front-End Developer</h2>
+      </header>
+
+      <section id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul>
+          <li>
+            <svg>
+              <use href="images/icons.svg#github-contacts"></use>
+            </svg>
+            <a href="https://github.com/annsilin" target="_blank">annsilin</a>
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#linkedin"></use>
+            </svg>
+            <a href="https://www.linkedin.com/in/anna-silinskaya/" target="_blank">anna-silinskaya</a>
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#telegram"></use>
+            </svg>
+            <a href="https://t.me/annsilin" target="_blank">annsilin</a>
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#discord"></use>
+            </svg>
+            <a href="https://discordapp.com/users/410459193791741953" target="_blank">annsilin</a>
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#location"></use>
+            </svg>
+            Saratov, Russia
+          </li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About me</h2>
+        <p>Currently, I&#8217;m a 5th year student at Saratov State University. I&#8217;m mostly interested in Python
+          and JavaScript
+          and wish to become a FrontEnd developer. I don&#8217;t have work experience yet, but I do have some uni
+          projects
+          written in Python, Django and JavaScript.</p>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li>
+            <svg>
+              <use href="images/icons.svg#cplusplus"></use>
+            </svg>
+            C++
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#csharp"></use>
+            </svg>
+            C#
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#python"></use>
+            </svg>
+            Python
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#html"></use>
+            </svg>
+            HTML
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#css"></use>
+            </svg>
+            CSS
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#sass"></use>
+            </svg>
+            SASS
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#javascript"></use>
+            </svg>
+            JavaScript (basic)
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#git"></use>
+            </svg>
+            Git
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#github"></use>
+            </svg>
+            GitHub
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#gitlab"></use>
+            </svg>
+            GitLab
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#mssql"></use>
+            </svg>
+            MS SQL Server
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#sqlite"></use>
+            </svg>
+            SQLite
+          </li>
+          <li>
+            <svg>
+              <use href="images/icons.svg#photoshop"></use>
+            </svg>
+            Adobe Photoshop
+          </li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+          <li>Russian - Native</li>
+          <li>English - Upper Intermediate/Advanced</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="column" id="right">
+      <section id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li><h3>Saratov State University named after N.G. Chernyshevsky</h3>
+            <p>Faculty of Computer Science &#38; Information Technology</p>
+            <p>Department of Mathematical Cybernetics &#38; Computer Science</p>
+            <p class="date">2019 - 2024, Bachelor&#8217;s Degree</p></li>
+        </ul>
+      </section>
+
+      <section id="courses">
+        <h2 class="section-title">Courses</h2>
+        <ul>
+          <li><a href="https://cs50.harvard.edu/web/2020/" target="_blank"><h3>CS50&#8217;s Web Programming with Python
+            and
+            JavaScript</h3></a>
+            <p class="date">in progress</p></li>
+          <li><a href="https://rs.school/js-stage0/" target="_blank"><h3>RS School&#8217;s JavaScript/Front-end. Stage
+            0</h3></a>
+            <p class="date">in progress</p></li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+          <li><h3>QPICK headphones shop</h3>
+            <p>A prototype of headphones shop website. Made with HTML, SASS, JavaScript.
+              Project link: <a href="https://annsilin-qpick.netlify.app/index.html" target="_blank">click</a></p>
+            <p class="date">October 2022</p></li>
+        </ul>
+      </section>
+
+      <section id="code-example">
+        <h2 class="section-title">Code example</h2>
+        <p><a href="https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript" target="_blank">ReversedStrings</a>
+          task from Codewars</p>
+        <pre>
+          <code class="language-javascript">
+            function solution(str){
+              return str.split(&#34;&#34;).reverse().join(&#34;&#34;);
+            }
+          </code>
+        </pre>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="main-footer">
+  <nav id="footer">
+    <ul>
+      <li>
+        <a href="https://github.com/annsilin" target="_blank">
+          <svg>
+            <use href="images/icons.svg#github"></use>
+          </svg>
+        </a>
+      </li>
+      <li><p>2023</p></li>
+      <li>
+        <a href="https://rs.school/js-stage0/" target="_blank">
+          <svg>
+            <use href="images/icons.svg#rsschool"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
